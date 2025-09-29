@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Autók táblázata</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        td {
+            border: 1px solid #999;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        tbody tr {
+            opacity: 0;
+            transition: opacity 0.5s ease-in;
+        }
+        tbody tr.visible {
+            opacity: 1;
+        }
+        th {
+            border: 1px solid #999;
+            padding: 8px 12px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Autók listája</h1>
+
+    <table id="carTable">
+        <thead>
+            <tr>
+                <th>Márka</th>
+                <th>Évjárat</th>
+                <th>Rendszám</th>
+            </tr>
+        </thead>
+        <tbody id="carTableBody">
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
