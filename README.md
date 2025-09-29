@@ -1,0 +1,2 @@
+# vizsfelk
+vizsgafelkészítős szar feladatok
